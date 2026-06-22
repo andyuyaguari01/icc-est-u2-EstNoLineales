@@ -34,7 +34,7 @@ public class Ejercicio1 {
         printTreeRecursivo(root.getRight(), espacio);
         System.out.println();
 
-       for (int i = 0; i < espacio; i++) {
+       for (int i = 5; i < espacio; i++) {
         System.out.print(" ");
         }
 
