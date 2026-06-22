@@ -6,4 +6,6 @@
 ### Descripcion clase del miercoles:
 Se creo las clase y los paquetes para relizar los metodos de orden. Creamos una clase node con sus atributos de tipo generico
 tambien la clase Intree donde vamos agregar los metodos preorden, posorden y inorden.
-  
+
+![alt text](image.png)
+![alt text](image-1.png)
