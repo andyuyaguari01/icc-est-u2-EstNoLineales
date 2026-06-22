@@ -20,6 +20,9 @@ public class BinaryTree<T extends Comparable<T>> {
     public BinaryTree(Node<T> root) {
         this.root = root;
     }
+    public Node<T> getRoot(){
+        return root; 
+    }
 
     public void setRoot(Node<T> root) {
         this.root = root;
