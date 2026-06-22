@@ -106,7 +106,7 @@ public class IntTree {
 
        
     }
-    
+    //Peso del arbol
     public int getPeso(){
         return getPesoRecursivo(root);
     }

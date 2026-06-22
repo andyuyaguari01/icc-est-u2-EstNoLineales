@@ -2,7 +2,7 @@ package structure.nodes.trees;
 
 import structure.nodes.Node;
 
-public class BinaryTree<T> {
+public class BinaryTree<T extends Comparable<T>> {
     private Node<T> root ;
     
 
