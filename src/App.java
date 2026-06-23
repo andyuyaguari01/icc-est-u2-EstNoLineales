@@ -26,8 +26,12 @@ public class App {
     for(int numero : numeros2)
         tree.add(numero);
     Node<Integer> root = tree.getRoot();
+    ejercicio2.inverTree(root);
+    System.out.println("Arbol Invertido:");
+    ejercicio2.printTree(root);
     
     }
+    
 
     private static void runBinaryTree(){
         BinaryTree<String> arbolStrings = new BinaryTree<>();
