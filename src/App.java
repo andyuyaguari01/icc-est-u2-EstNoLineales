@@ -1,8 +1,11 @@
+import java.util.List;
 import structure.models.Persona;
 import structure.nodes.Node;
 import structure.nodes.trees.BinaryTree;
 import structure.nodes.trees.Ejercicio1;
 import structure.nodes.trees.Ejercicio2;
+import structure.nodes.trees.Ejercicio3;
+import structure.nodes.trees.Ejercicio4;
 import structure.nodes.trees.IntTree;
 
 public class App {
@@ -11,6 +14,8 @@ public class App {
         runBinaryTree();
         runEjercicios();
         runEjercicios2();
+        runEjercicios3();
+        runEjercicios4();
     }
     private static void runEjercicios(){
         Ejercicio1 ejercicio1 = new Ejercicio1();
@@ -31,6 +36,55 @@ public class App {
     ejercicio2.printTree(root);
     
     }
+
+    private static void runEjercicios3() {
+
+    Ejercicio3 ejercicio3 = new Ejercicio3();
+
+    int[] numeros = new int[]{5, 3, 7, 2, 4, 6, 8};
+
+    BinaryTree<Integer> tree = new BinaryTree<>();
+
+    for (int numero : numeros) {
+        tree.add(numero);
+    }
+
+    Node<Integer> root = tree.getRoot();
+
+    List<List<Node>> niveles = ejercicio3.listLevels(root);
+
+    System.out.println("Niveles del árbol:");
+
+    for (int i = 0; i < niveles.size(); i++) {
+        System.out.print("Nivel " + i + ": ");
+
+        for (Node nodo : niveles.get(i)) {
+            System.out.print(nodo.getValue() + " ");
+        }
+
+        System.out.println();
+    }
+}
+private static void runEjercicios4() {
+
+    Ejercicio4 ejercicio4 = new Ejercicio4();
+
+    int[] numeros = new int[]{5, 3, 7, 2, 4, 6, 8};
+
+    BinaryTree<Integer> tree = new BinaryTree<>();
+
+    for (int numero : numeros) {
+        tree.add(numero);
+    }
+
+    Node<Integer> root = tree.getRoot();
+
+    int profundidad = ejercicio4.maximoDepth(root);
+
+    System.out.println("La profundidad máxima del árbol es: " + profundidad);
+}
+
+    
     
 
     private static void runBinaryTree(){
