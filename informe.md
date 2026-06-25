@@ -39,5 +39,15 @@ En este ejercicio calcula la profundidad maxima del arbol. Representa el camino 
 maximoDepht(Node Integer root );
 Recorre el lado izquierdo y lo mismo del lado derecho, luego compara cual tiene mayor profundidad y retorna profundidad mayor mas 1.
 
+Capturas del los codigos Desarrollados 
 ![alt text](image-6.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
+![alt text](image-10.png)
  
+Capturas de salida de la consola
+![alt text](image-11.png)
+ ![alt text](image-7.png)
+ 
+ 
+
