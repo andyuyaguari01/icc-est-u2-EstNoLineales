@@ -1,4 +1,8 @@
 import java.util.List;
+import java.util.Set;
+
+import colletions.set.Sets;
+import structure.models.Contacto;
 import structure.models.Persona;
 import structure.nodes.Node;
 import structure.nodes.trees.BinaryTree;
@@ -10,13 +14,62 @@ import structure.nodes.trees.IntTree;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        runIntTree();
-        runBinaryTree();
-        runEjercicios();
-        runEjercicios2();
-        runEjercicios3();
-        runEjercicios4();
+        //runIntTree();
+        //runBinaryTree();
+       // runEjercicios();
+        //runEjercicios2();
+        //runEjercicios3();
+        //runEjercicios4();
+        runSets();
     }
+
+    private static void runSets(){
+        Sets sets = new Sets();
+// metodo hasha Code 
+        System.out.println("* hashCode:");
+        Set<String> hashSet = sets.construirHashSet();
+        System.out.println(hashSet);
+        System.out.println("Size ="+ hashSet.size());
+        System.out.println(hashSet.contains("F"));
+
+
+ //Metodo linkedhashSet
+         System.out.println("*  linkedHashSet:");
+        Set<String> lSet = sets.construirLinkedHashSet();
+        System.out.println(lSet);
+        System.out.println("Size ="+ lSet.size());
+        System.out.println(lSet.contains("F"));
+
+// Metodo treeSet
+        System.out.println("*  TreeSet");
+        Set<String> tSet = sets.construirTreeSet();
+        System.out.println(tSet);
+        System.out.println("Size ="+ tSet.size());
+        System.out.println(tSet.contains("F"));
+
+// Hash de Contactos
+
+        System.out.println("* Hash Contacto Set:");
+        Set<Contacto> hCSet = sets.contruirHashSetContacto();
+        System.out.println(hCSet);
+        System.out.println("Size ="+ hCSet.size());
+        System.out.println(hCSet.contains("F"));
+
+// Tree Contacto set HashCode
+        System.out.println("* Tree hash Code");
+        Set<Contacto> tCSet = sets.construirTreeSetContacto();
+        System.out.println(tCSet);
+        System.out.println("Size ="+ tCSet.size());
+        System.out.println(tCSet.contains("F"));
+
+
+
+    }
+
+
+
+
+
     private static void runEjercicios(){
         Ejercicio1 ejercicio1 = new Ejercicio1();
         int[] numeros = new int[] {5, 3, 7, 2, 4, 6, 8};

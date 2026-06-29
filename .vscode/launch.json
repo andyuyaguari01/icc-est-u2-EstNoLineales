@@ -9,6 +9,13 @@
             "name": "App",
             "request": "launch",
             "mainClass": "App",
+            "projectName": "icc-est-u2-estNotLineales_5957171d"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
             "projectName": "icc-est-u2-EstNoLineales_f3e777a9"
         },
         {
