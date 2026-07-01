@@ -1,7 +1,8 @@
-import java.util.List;
-import java.util.Set;
-
+import colletions.maps.Maps;
 import colletions.set.Sets;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import structure.models.Contacto;
 import structure.models.Persona;
 import structure.nodes.Node;
@@ -20,7 +21,14 @@ public class App {
         //runEjercicios2();
         //runEjercicios3();
         //runEjercicios4();
-        runSets();
+        //runSets();
+        runConstruirHashMap();
+    }
+    private static void runConstruirHashMap(){
+        Maps maps = new Maps();
+        Map<String, Integer> mapa = maps.construirHashMap();
+        System.out.println("EL MAPA ES:"+ mapa);
+
     }
 
     private static void runSets(){
